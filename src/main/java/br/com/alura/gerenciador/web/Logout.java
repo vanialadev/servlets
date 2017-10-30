@@ -14,7 +14,6 @@ public class Logout implements Tarefa {
 		req.getSession().removeAttribute("usuarioLogado");
 		req.getSession().invalidate();
 		req.getSession().setMaxInactiveInterval(60 * 10);
-//		resp.sendRedirect("logout.html");
 		return "/WEB-INF/paginas/logout.html";	
 	}
 }

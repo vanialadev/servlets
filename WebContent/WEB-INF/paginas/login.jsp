@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
 	<c:choose>
     <c:when test="${empty usuario}">
-        I see!  You don't have a name.. well.. Hello no name
+        Usuário ou senha errada.
     </c:when>
     <c:otherwise>
         Usuário ${usuario.email} logado
